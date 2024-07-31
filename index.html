@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
 <head>
+    <link href="style.css" rel="stylesheet" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./stylesheet.css" rel="stylesheet">
-    <script src="main.js"></script>
-    <title>Exercício JS+HTML</title>
+    <title>Exercício JQuery</title>
 </head>
 <body>
-
-    <div>
-        <form id="form-teste">
-            <input id="campoA" type="number" required>
-            <input id="campoB" type="number" required>
-            <button type="submit">Submeter</button>
+    <div class="container">
+        <h1> Lista de Tarefas </h1>
+        <form>
+            <input id="input-tarefa" placeholder="Nome da tarefa" type="text">
+            <button type="submit">Cadastrar</button>
         </form>
+        <ul class="listaElementos">
+            <li>
+                <a href="#" id="elem-clicavel">asdasdz</a>
+            </li>
+            <li>
+                <a href="#" id="elem-clicavel">asdasdz</a>
+            </li>
+            <li>
+                <a href="#" id="elem-clicavel">asdasdz</a>
+            </li>
+        </ul>
     </div>
-    <script src="./main.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="main.js"></script>
+
 </body>
 </html>

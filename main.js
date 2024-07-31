@@ -1,23 +1,17 @@
-var form = document.getElementById('form-teste');
+$(document).ready(function() {
 
-function validaBA(campoA,campoB) {
-    return campoB > campoA;
-}
+    $('form').submit(function(e) {
+        e.preventDefault();
+        const texto = $('#input-tarefa').val();
+        const tarefaNova = $("<li></li>");
+        novatf = $(`<a href="#" id="elem-clicavel"> ${texto} </a>`)
+        novatf.appendTo(tarefaNova);
+        tarefaNova.appendTo($("ul"))
+        $("#input-tarefa").val("");
+    })
 
-
-form.addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    cA = document.querySelector('#campoA').value
-    cB = document.querySelector('#campoB').value
-
-    bMaiorQueA = validaBA(cA,cB)
-
-    if (bMaiorQueA) {
-        alert("Sucesso, o número do campo B é maior que o número do campo A.")
-    }
-    else {
-        alert("Erro, o número do campo A é maior ou igual ao número do campo B")
-    }
-
+    $("ul").on("click", "a", function(e) {
+        e.preventDefault();
+        $(this).addClass("marcador-feito");
+    })
 })
