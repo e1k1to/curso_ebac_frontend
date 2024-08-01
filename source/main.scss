@@ -1,11 +1,4 @@
-$corHeader: #78ceff;
-$tamanhoDef: 16px;
-
-header {
-    padding: $tamanhoDef;
-    background-color: $corHeader;
-    margin-bottom: $tamanhoDef;
-}
+@use "config/header.scss";
 
 h1 {
     font-family: "Archivo Black", sans-serif;

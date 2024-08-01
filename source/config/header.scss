@@ -1,0 +1,9 @@
+$tamanhoDef: 16px;
+$corHeader: #78ceff;
+
+
+header {
+    padding: $tamanhoDef;
+    background-color: $corHeader;
+    margin-bottom: $tamanhoDef;
+}
